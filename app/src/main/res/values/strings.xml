@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Luz Barata</string>
+    <string name="settings">Ajustes</string>
+    <string name="back">Volver</string>
+    <string name="today">Hoy</string>
+    <string name="tomorrow">Mañana</string>
+
+    <string name="now_label">Ahora (%1$s)</string>
+    <string name="now_tag">Ahora</string>
+    <string name="level_low">Barata</string>
+    <string name="level_medium">Media</string>
+    <string name="level_high">Cara</string>
+    <string name="cheapest">Mínimo</string>
+    <string name="average">Media</string>
+    <string name="most_expensive">Máximo</string>
+
+    <string name="best_window_title">Mejor hora para lavadora, lavavajillas…</string>
+    <string name="best_window_average">%1$s de media</string>
+    <string name="best_window_saving">Un %1$d %% más barato que la media del día</string>
+    <string name="best_window_none">Hoy ya no quedan tantas horas seguidas. Mira los precios de mañana.</string>
+    <plurals name="hours_short">
+        <item quantity="one">%d h</item>
+        <item quantity="other">%d h</item>
+    </plurals>
+
+    <string name="all_hours">Todas las horas</string>
+    <string name="chart_description">Gráfico del precio de la luz por horas</string>
+    <string name="data_source">Precio PVPC con impuestos excluidos. Datos: Red Eléctrica (REData).</string>
+
+    <string name="tomorrow_not_published">Los precios de mañana se publican cada día hacia las 20:15.</string>
+    <string name="tomorrow_will_notify">Te avisaremos en cuanto salgan.</string>
+    <string name="notify_me">Avísame cuando salgan</string>
+    <string name="error_network">No hay conexión. Comprueba tu internet e inténtalo de nuevo.</string>
+    <string name="error_server">No se han podido cargar los precios. Inténtalo dentro de un rato.</string>
+    <string name="retry">Reintentar</string>
+
+    <string name="zone_title">Zona</string>
+    <string name="zone_peninsula">Península</string>
+    <string name="zone_canarias">Canarias</string>
+    <string name="zone_baleares">Baleares</string>
+    <string name="zone_ceuta">Ceuta</string>
+    <string name="zone_melilla">Melilla</string>
+
+    <string name="notifications_title">Avisos</string>
+    <string name="notify_tomorrow">Precios de mañana</string>
+    <string name="notify_tomorrow_detail">Cada tarde, la hora más barata y la más cara del día siguiente.</string>
+    <string name="channel_tomorrow_name">Precios de mañana</string>
+    <string name="channel_tomorrow_description">Aviso diario cuando se publican los precios del día siguiente</string>
+    <string name="notification_tomorrow_title">Ya están los precios de mañana</string>
+    <string name="notification_tomorrow_text">Lo más barato: %1$s (%2$s). Lo más caro: %3$s (%4$s).</string>
+
+    <string name="privacy_options">Opciones de privacidad de anuncios</string>
+    <string name="about_title">Acerca de</string>
+    <string name="about_text">Precio voluntario para el pequeño consumidor (PVPC), publicado por Red Eléctrica. Solo es tu precio si tienes una tarifa regulada PVPC; en el mercado libre depende de tu contrato.</string>
+    <string name="version">Versión %1$s</string>
+</resources>
