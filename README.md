@@ -1,6 +1,10 @@
 # Luz Barata
 
-App Android (Jetpack Compose) con el precio de la luz PVPC por horas en España.
+![Kotlin](https://img.shields.io/badge/Kotlin-2.2-7F52FF?logo=kotlin&logoColor=white) ![Jetpack Compose](https://img.shields.io/badge/Jetpack%20Compose-Material%203-4285F4?logo=jetpackcompose&logoColor=white) ![Android](https://img.shields.io/badge/Android-8.0%2B-3DDC84?logo=android&logoColor=white)
+
+Precio de la luz PVPC por horas en España, con la mejor hora para cada electrodoméstico y aviso de los precios de mañana.
+
+App Android nativa desarrollada en **Kotlin** con **Jetpack Compose** (Material 3).
 
 - Precio de ahora, mínimo, media y máximo del día.
 - Mejor franja de 1 a 4 horas seguidas para poner la lavadora, el lavavajillas o cargar el coche, con el ahorro frente a la media.
