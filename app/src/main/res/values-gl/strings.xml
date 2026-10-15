@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Luz Barata</string>
+    <string name="settings">Axustes</string>
+    <string name="back">Volver</string>
+    <string name="today">Hoxe</string>
+    <string name="tomorrow">Mañá</string>
+
+    <string name="now_label">Agora (%1$s)</string>
+    <string name="now_tag">Agora</string>
+    <string name="level_low">Barata</string>
+    <string name="level_medium">Media</string>
+    <string name="level_high">Cara</string>
+    <string name="cheapest">Mínimo</string>
+    <string name="average">Media</string>
+    <string name="most_expensive">Máximo</string>
+
+    <string name="best_window_title">Mellor hora para a lavadora, o lavalouzas…</string>
+    <string name="best_window_average">%1$s de media</string>
+    <string name="best_window_saving">Un %1$d %% máis barato que a media do día</string>
+    <string name="best_window_none">Hoxe xa non quedan tantas horas seguidas. Mira os prezos de mañá.</string>
+    <plurals name="hours_short">
+        <item quantity="one">%d h</item>
+        <item quantity="other">%d h</item>
+    </plurals>
+
+    <string name="all_hours">Todas as horas</string>
+    <string name="chart_description">Gráfico do prezo da luz por horas</string>
+    <string name="data_source">Prezo PVPC sen impostos. Datos: Red Eléctrica (REData).</string>
+
+    <string name="tomorrow_not_published">Os prezos de mañá publícanse cada día arredor das 20:15.</string>
+    <string name="tomorrow_will_notify">Avisarémoste en canto saian.</string>
+    <string name="notify_me">Avísame cando saian</string>
+    <string name="error_network">Non hai conexión. Comproba a túa conexión e téntao de novo.</string>
+    <string name="error_server">Non se puideron cargar os prezos. Téntao dentro dun anaco.</string>
+    <string name="retry">Tentar de novo</string>
+
+    <string name="zone_title">Zona</string>
+    <string name="zone_peninsula">Península</string>
+    <string name="zone_canarias">Canarias</string>
+    <string name="zone_baleares">Illas Baleares</string>
+    <string name="zone_ceuta">Ceuta</string>
+    <string name="zone_melilla">Melilla</string>
+
+    <string name="notifications_title">Avisos</string>
+    <string name="notify_tomorrow">Prezos de mañá</string>
+    <string name="notify_tomorrow_detail">Cada tarde, a hora máis barata e a máis cara do día seguinte.</string>
+    <string name="channel_tomorrow_name">Prezos de mañá</string>
+    <string name="channel_tomorrow_description">Aviso diario cando se publican os prezos do día seguinte</string>
+    <string name="notification_tomorrow_title">Xa están os prezos de mañá</string>
+    <string name="notification_tomorrow_text">O máis barato: %1$s (%2$s). O máis caro: %3$s (%4$s).</string>
+
+    <string name="privacy_options">Opcións de privacidade dos anuncios</string>
+    <string name="about_title">Acerca de</string>
+    <string name="about_text">Prezo voluntario para o pequeno consumidor (PVPC), publicado por Red Eléctrica. Só é o teu prezo se tes unha tarifa regulada PVPC; no mercado libre depende do teu contrato.</string>
+    <string name="version">Versión %1$s</string>
+
+    <string name="appliance_title">Canto me custa poñer…?</string>
+    <string name="appliance_locked">Calcula o que custa cada electrodoméstico agora e na mellor hora do día.</string>
+    <string name="appliance_cost_now">Se o pos agora: %1$s</string>
+    <string name="appliance_cost_best">Na mellor hora: %1$s (%2$s)</string>
+    <string name="appliance_saving">Aforras %1$s cada vez</string>
+    <string name="appliance_note">Estimación cun consumo típico e o prezo PVPC sen impostos.</string>
+    <string name="appliance_washing_machine">Lavadora</string>
+    <string name="appliance_dishwasher">Lavalouzas</string>
+    <string name="appliance_dryer">Secadora</string>
+    <string name="appliance_oven">Forno</string>
+    <string name="appliance_air_conditioning">Aire acondicionado</string>
+    <string name="appliance_electric_car">Coche eléctrico</string>
+    <string name="premium_feature_appliances">Calculadora do custo por electrodoméstico</string>
+    <string name="premium_settings_text">Quita os anuncios e desbloquea a calculadora de electrodomésticos.</string>
+    <string name="remove_ads">Quitar anuncios</string>
+</resources>

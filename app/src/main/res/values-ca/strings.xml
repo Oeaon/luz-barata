@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Luz Barata</string>
+    <string name="settings">Configuració</string>
+    <string name="back">Tornar</string>
+    <string name="today">Avui</string>
+    <string name="tomorrow">Demà</string>
+
+    <string name="now_label">Ara (%1$s)</string>
+    <string name="now_tag">Ara</string>
+    <string name="level_low">Barata</string>
+    <string name="level_medium">Mitjana</string>
+    <string name="level_high">Cara</string>
+    <string name="cheapest">Mínim</string>
+    <string name="average">Mitjana</string>
+    <string name="most_expensive">Màxim</string>
+
+    <string name="best_window_title">Millor hora per a la rentadora, el rentaplats…</string>
+    <string name="best_window_average">%1$s de mitjana</string>
+    <string name="best_window_saving">Un %1$d %% més barat que la mitjana del dia</string>
+    <string name="best_window_none">Avui ja no queden tantes hores seguides. Mira els preus de demà.</string>
+    <plurals name="hours_short">
+        <item quantity="one">%d h</item>
+        <item quantity="other">%d h</item>
+    </plurals>
+
+    <string name="all_hours">Totes les hores</string>
+    <string name="chart_description">Gràfic del preu de la llum per hores</string>
+    <string name="data_source">Preu PVPC sense impostos. Dades: Red Eléctrica (REData).</string>
+
+    <string name="tomorrow_not_published">Els preus de demà es publiquen cada dia cap a les 20:15.</string>
+    <string name="tomorrow_will_notify">T\'avisarem tan bon punt surtin.</string>
+    <string name="notify_me">Avisa\'m quan surtin</string>
+    <string name="error_network">No hi ha connexió. Comprova la connexió a internet i torna-ho a provar.</string>
+    <string name="error_server">No s\'han pogut carregar els preus. Torna-ho a provar d\'aquí a una estona.</string>
+    <string name="retry">Torna-ho a provar</string>
+
+    <string name="zone_title">Zona</string>
+    <string name="zone_peninsula">Península</string>
+    <string name="zone_canarias">Canàries</string>
+    <string name="zone_baleares">Illes Balears</string>
+    <string name="zone_ceuta">Ceuta</string>
+    <string name="zone_melilla">Melilla</string>
+
+    <string name="notifications_title">Avisos</string>
+    <string name="notify_tomorrow">Preus de demà</string>
+    <string name="notify_tomorrow_detail">Cada tarda, l\'hora més barata i la més cara de l\'endemà.</string>
+    <string name="channel_tomorrow_name">Preus de demà</string>
+    <string name="channel_tomorrow_description">Avís diari quan es publiquen els preus de l\'endemà</string>
+    <string name="notification_tomorrow_title">Ja hi ha els preus de demà</string>
+    <string name="notification_tomorrow_text">El més barat: %1$s (%2$s). El més car: %3$s (%4$s).</string>
+
+    <string name="privacy_options">Opcions de privadesa dels anuncis</string>
+    <string name="about_title">Quant a</string>
+    <string name="about_text">Preu voluntari per al petit consumidor (PVPC), publicat per Red Eléctrica. Només és el teu preu si tens una tarifa regulada PVPC; al mercat lliure depèn del teu contracte.</string>
+    <string name="version">Versió %1$s</string>
+
+    <string name="appliance_title">Quant em costa posar…?</string>
+    <string name="appliance_locked">Calcula el que costa cada electrodomèstic ara i a la millor hora del dia.</string>
+    <string name="appliance_cost_now">Si el poses ara: %1$s</string>
+    <string name="appliance_cost_best">A la millor hora: %1$s (%2$s)</string>
+    <string name="appliance_saving">T\'estalvies %1$s cada vegada</string>
+    <string name="appliance_note">Estimació amb un consum típic i el preu PVPC sense impostos.</string>
+    <string name="appliance_washing_machine">Rentadora</string>
+    <string name="appliance_dishwasher">Rentaplats</string>
+    <string name="appliance_dryer">Assecadora</string>
+    <string name="appliance_oven">Forn</string>
+    <string name="appliance_air_conditioning">Aire condicionat</string>
+    <string name="appliance_electric_car">Cotxe elèctric</string>
+    <string name="premium_feature_appliances">Calculadora del cost per electrodomèstic</string>
+    <string name="premium_settings_text">Treu els anuncis i desbloqueja la calculadora d\'electrodomèstics.</string>
+    <string name="remove_ads">Treure els anuncis</string>
+</resources>

@@ -12,6 +12,7 @@ import androidx.compose.foundation.selection.toggleable
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
+import androidx.compose.material3.Button
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.Icon
@@ -43,6 +44,8 @@ fun SettingsScreen(
     onZoneChange: (PvpcZone) -> Unit,
     onNotifyChange: (Boolean) -> Unit,
     onPrivacyOptions: () -> Unit,
+    isPremium: Boolean,
+    onOpenPremium: () -> Unit,
 ) {
     Scaffold(
         topBar = {
@@ -104,6 +107,15 @@ fun SettingsScreen(
                     )
                 }
                 Switch(checked = settings.notifyTomorrow, onCheckedChange = null)
+            }
+
+            if (!isPremium) {
+                HorizontalDivider(Modifier.padding(vertical = 16.dp))
+                SectionTitle(stringResource(R.string.premium_title))
+                Text(stringResource(R.string.premium_settings_text), style = MaterialTheme.typography.bodyMedium)
+                Button(onClick = onOpenPremium, modifier = Modifier.padding(top = 8.dp)) {
+                    Text(stringResource(R.string.remove_ads))
+                }
             }
 
             if (showPrivacyOptions) {

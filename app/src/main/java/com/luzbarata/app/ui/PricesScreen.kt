@@ -3,12 +3,9 @@ package com.luzbarata.app.ui
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.PaddingValues
-import androidx.compose.foundation.layout.WindowInsets
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.foundation.layout.navigationBars
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.layout.windowInsetsPadding
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.LazyListScope
 import androidx.compose.foundation.lazy.items
@@ -32,7 +29,12 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import com.luzbarata.app.R
-import com.luzbarata.app.ads.AdBanner
+import com.luzbarata.app.monetization.AdBanner
+import com.luzbarata.app.monetization.LockedFeature
+import com.luzbarata.app.monetization.Monetization
+import com.luzbarata.app.monetization.MonetizationState
+import com.luzbarata.app.monetization.PremiumAction
+import com.luzbarata.core.Appliance
 import com.luzbarata.core.DayPrices
 import java.time.Instant
 
@@ -40,29 +42,29 @@ import java.time.Instant
 @Composable
 fun PricesScreen(
     state: MainUiState,
-    adsReady: Boolean,
+    monetization: Monetization,
+    monetizationState: MonetizationState,
     onSelect: (DaySelection) -> Unit,
     onRefresh: () -> Unit,
     onWindowHoursChange: (Int) -> Unit,
+    onApplianceChange: (Appliance) -> Unit,
     onEnableNotifications: () -> Unit,
     onOpenSettings: () -> Unit,
+    onOpenPremium: () -> Unit,
 ) {
     Scaffold(
         topBar = {
             TopAppBar(
                 title = { Text(stringResource(R.string.app_name)) },
                 actions = {
+                    PremiumAction(monetizationState, onOpenPremium)
                     IconButton(onClick = onOpenSettings) {
                         Icon(Icons.Filled.Settings, contentDescription = stringResource(R.string.settings))
                     }
                 },
             )
         },
-        bottomBar = {
-            if (adsReady) {
-                Box(Modifier.windowInsetsPadding(WindowInsets.navigationBars)) { AdBanner() }
-            }
-        },
+        bottomBar = { AdBanner(monetizationState) },
     ) { padding ->
         PullToRefreshBox(
             isRefreshing = state.isRefreshing,
@@ -92,6 +94,11 @@ fun PricesScreen(
                         now = state.now,
                         windowHours = state.settings.windowHours,
                         onWindowHoursChange = onWindowHoursChange,
+                        appliance = state.settings.appliance,
+                        onApplianceChange = onApplianceChange,
+                        monetization = monetization,
+                        monetizationState = monetizationState,
+                        onOpenPremium = onOpenPremium,
                     )
                 }
                 item {
@@ -126,6 +133,11 @@ private fun LazyListScope.dayContent(
     now: Instant,
     windowHours: Int,
     onWindowHoursChange: (Int) -> Unit,
+    appliance: Appliance,
+    onApplianceChange: (Appliance) -> Unit,
+    monetization: Monetization,
+    monetizationState: MonetizationState,
+    onOpenPremium: () -> Unit,
 ) {
     val current = if (isToday) prices.hourAt(now) else null
     if (current != null) item { CurrentPriceCard(current, prices.levelOf(current)) }
@@ -137,6 +149,17 @@ private fun LazyListScope.dayContent(
             windowHours = windowHours,
             onWindowHoursChange = onWindowHoursChange,
         )
+    }
+    item {
+        LockedFeature(
+            state = monetizationState,
+            monetization = monetization,
+            title = stringResource(R.string.appliance_title),
+            description = stringResource(R.string.appliance_locked),
+            onGoPremium = onOpenPremium,
+        ) {
+            ApplianceCard(prices, appliance, now = if (isToday) now else null, onApplianceChange)
+        }
     }
     item { PriceChartCard(prices, current = current, now = if (isToday) now else null) }
     item { Text(stringResource(R.string.all_hours), style = MaterialTheme.typography.titleMedium) }

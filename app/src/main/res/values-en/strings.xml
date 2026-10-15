@@ -54,4 +54,19 @@
     <string name="about_title">About</string>
     <string name="about_text">Regulated tariff for small consumers (PVPC), published by Red Eléctrica. It is only your price if you are on the regulated PVPC tariff; on the free market it depends on your contract.</string>
     <string name="version">Version %1$s</string>
+    <string name="appliance_title">How much does it cost to run…?</string>
+    <string name="appliance_locked">Work out what each appliance costs now and at the best time of the day.</string>
+    <string name="appliance_cost_now">If you start it now: %1$s</string>
+    <string name="appliance_cost_best">At the best time: %1$s (%2$s)</string>
+    <string name="appliance_saving">You save %1$s per use</string>
+    <string name="appliance_note">Estimate with typical consumption and the PVPC price excluding taxes.</string>
+    <string name="appliance_washing_machine">Washing machine</string>
+    <string name="appliance_dishwasher">Dishwasher</string>
+    <string name="appliance_dryer">Dryer</string>
+    <string name="appliance_oven">Oven</string>
+    <string name="appliance_air_conditioning">Air conditioning</string>
+    <string name="appliance_electric_car">Electric car</string>
+    <string name="premium_feature_appliances">Appliance cost calculator</string>
+    <string name="premium_settings_text">Remove the ads and unlock the appliance calculator.</string>
+    <string name="remove_ads">Remove ads</string>
 </resources>

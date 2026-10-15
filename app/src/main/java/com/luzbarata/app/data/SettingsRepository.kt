@@ -9,6 +9,7 @@ import androidx.datastore.preferences.core.emptyPreferences
 import androidx.datastore.preferences.core.intPreferencesKey
 import androidx.datastore.preferences.core.stringPreferencesKey
 import androidx.datastore.preferences.preferencesDataStore
+import com.luzbarata.core.Appliance
 import com.luzbarata.core.PvpcZone
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.catch
@@ -24,6 +25,7 @@ data class AppSettings(
     val windowHours: Int = 2,
     val notifyTomorrow: Boolean = false,
     val lastNotifiedDate: LocalDate? = null,
+    val appliance: Appliance = Appliance.WASHING_MACHINE,
 )
 
 class SettingsRepository(private val store: DataStore<Preferences>) {
@@ -35,6 +37,7 @@ class SettingsRepository(private val store: DataStore<Preferences>) {
                 windowHours = (prefs[WINDOW_HOURS] ?: 2).coerceIn(MIN_WINDOW, MAX_WINDOW),
                 notifyTomorrow = prefs[NOTIFY_TOMORROW] ?: false,
                 lastNotifiedDate = prefs[LAST_NOTIFIED]?.let { runCatching { LocalDate.parse(it) }.getOrNull() },
+                appliance = Appliance.entries.firstOrNull { it.name == prefs[APPLIANCE] } ?: Appliance.WASHING_MACHINE,
             )
         }
 
@@ -50,6 +53,10 @@ class SettingsRepository(private val store: DataStore<Preferences>) {
         store.edit { it[NOTIFY_TOMORROW] = enabled }
     }
 
+    suspend fun setAppliance(appliance: Appliance) {
+        store.edit { it[APPLIANCE] = appliance.name }
+    }
+
     suspend fun setLastNotified(date: LocalDate) {
         store.edit { it[LAST_NOTIFIED] = date.toString() }
     }
@@ -62,5 +69,6 @@ class SettingsRepository(private val store: DataStore<Preferences>) {
         private val WINDOW_HOURS = intPreferencesKey("window_hours")
         private val NOTIFY_TOMORROW = booleanPreferencesKey("notify_tomorrow")
         private val LAST_NOTIFIED = stringPreferencesKey("last_notified")
+        private val APPLIANCE = stringPreferencesKey("appliance")
     }
 }

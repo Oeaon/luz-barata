@@ -1,4 +1,4 @@
-package com.luzbarata.app.ads
+package com.luzbarata.app.monetization
 
 import android.app.Activity
 import com.google.android.gms.ads.MobileAds

@@ -12,6 +12,7 @@ import com.luzbarata.app.data.PvpcRepository
 import com.luzbarata.app.data.SPAIN_ZONE
 import com.luzbarata.app.data.SettingsRepository
 import com.luzbarata.app.notifications.NotificationScheduler
+import com.luzbarata.core.Appliance
 import com.luzbarata.core.DayPrices
 import com.luzbarata.core.PvpcZone
 import kotlinx.coroutines.Job
@@ -84,6 +85,10 @@ class MainViewModel(
 
     fun setWindowHours(hours: Int) {
         viewModelScope.launch { settingsRepository.setWindowHours(hours) }
+    }
+
+    fun setAppliance(appliance: Appliance) {
+        viewModelScope.launch { settingsRepository.setAppliance(appliance) }
     }
 
     fun setZone(zone: PvpcZone) {

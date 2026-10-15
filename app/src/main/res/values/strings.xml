@@ -54,4 +54,19 @@
     <string name="about_title">Acerca de</string>
     <string name="about_text">Precio voluntario para el pequeño consumidor (PVPC), publicado por Red Eléctrica. Solo es tu precio si tienes una tarifa regulada PVPC; en el mercado libre depende de tu contrato.</string>
     <string name="version">Versión %1$s</string>
+    <string name="appliance_title">¿Cuánto me cuesta poner…?</string>
+    <string name="appliance_locked">Calcula lo que cuesta cada electrodoméstico ahora y en la mejor hora del día.</string>
+    <string name="appliance_cost_now">Si lo pones ahora: %1$s</string>
+    <string name="appliance_cost_best">En la mejor hora: %1$s (%2$s)</string>
+    <string name="appliance_saving">Te ahorras %1$s por puesta</string>
+    <string name="appliance_note">Estimación con un consumo típico y el precio PVPC sin impuestos.</string>
+    <string name="appliance_washing_machine">Lavadora</string>
+    <string name="appliance_dishwasher">Lavavajillas</string>
+    <string name="appliance_dryer">Secadora</string>
+    <string name="appliance_oven">Horno</string>
+    <string name="appliance_air_conditioning">Aire acondicionado</string>
+    <string name="appliance_electric_car">Coche eléctrico</string>
+    <string name="premium_feature_appliances">Calculadora de coste por electrodoméstico</string>
+    <string name="premium_settings_text">Quita los anuncios y desbloquea la calculadora de electrodomésticos.</string>
+    <string name="remove_ads">Quitar anuncios</string>
 </resources>
