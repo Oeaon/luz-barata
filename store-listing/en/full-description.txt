@@ -1,0 +1,22 @@
+When is it cheapest to run the washing machine, the dishwasher or charge your car? Luz Barata shows Spain's regulated PVPC electricity price for today and tomorrow, hour by hour, using official data from Red Eléctrica.
+
+WHAT YOU CAN DO
+• See the current electricity price and whether it is cheap, average or expensive.
+• Check the lowest, highest and average price of the day.
+• Find the best block of 1 to 4 consecutive hours for your appliances and how much you save compared with the average.
+• See a chart of all 24 hours coloured green, amber and red.
+• Check tomorrow's prices as soon as they are published, around 20:15.
+• Get a notification every evening with the cheapest and most expensive hours of the next day.
+• Choose your region: mainland Spain, Canary Islands, Balearic Islands, Ceuta or Melilla.
+• Use it offline with the days you have already checked.
+
+HOW MUCH DOES IT COST TO RUN…?
+The appliance calculator tells you how much a washing machine, dishwasher, dryer, oven, air conditioning or electric car charge costs if you start it now, and how much if you wait for the best time.
+
+PREMIUM
+Premium removes all ads and keeps the appliance calculator always unlocked. Choose a monthly subscription or a one-off lifetime payment. You can also unlock the calculator for free for 24 hours by watching an ad.
+
+DATA
+Prices are the PVPC (regulated tariff for small consumers) published by Red Eléctrica through its public REData API, excluding taxes. They are only your price if you are on the regulated PVPC tariff; on the free market it depends on your contract.
+
+Luz Barata is an independent app and is not affiliated with Red Eléctrica or any electricity supplier.

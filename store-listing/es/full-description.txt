@@ -1,0 +1,22 @@
+¿Cuándo es más barato poner la lavadora, el lavavajillas o cargar el coche? Luz Barata te enseña el precio de la luz PVPC de hoy y de mañana, hora a hora, con los datos oficiales de Red Eléctrica.
+
+QUÉ PUEDES HACER
+• Ver el precio de la luz de ahora mismo y si es barato, normal o caro.
+• Consultar el precio más bajo, el más alto y la media del día.
+• Encontrar la mejor franja de 1 a 4 horas seguidas para tus electrodomésticos y cuánto ahorras frente a la media.
+• Ver un gráfico con las 24 horas coloreadas en verde, ámbar y rojo.
+• Consultar los precios de mañana en cuanto se publican, hacia las 20:15.
+• Recibir un aviso cada tarde con la hora más barata y la más cara del día siguiente.
+• Elegir tu zona: Península, Canarias, Baleares, Ceuta o Melilla.
+• Usarla sin conexión con los días que ya has consultado.
+
+¿CUÁNTO ME CUESTA PONER…?
+La calculadora de electrodomésticos te dice cuánto cuesta una puesta de lavadora, lavavajillas, secadora, horno, aire acondicionado o la carga del coche eléctrico si lo pones ahora, y cuánto si esperas a la mejor hora.
+
+PREMIUM
+Con Premium quitas todos los anuncios y tienes la calculadora de electrodomésticos siempre disponible. Puedes elegir una suscripción mensual o un pago único para siempre. La calculadora también se puede desbloquear gratis durante 24 horas viendo un anuncio.
+
+DATOS
+Los precios son los del PVPC (Precio Voluntario para el Pequeño Consumidor) publicados por Red Eléctrica a través de su API pública REData, sin impuestos. Solo son tu precio si tienes contratada la tarifa regulada PVPC; en el mercado libre depende de tu contrato.
+
+Luz Barata es una app independiente y no está vinculada a Red Eléctrica ni a ninguna comercializadora.
