@@ -20,3 +20,7 @@ DATOS
 Los precios son los del PVPC (Precio Voluntario para el Pequeño Consumidor) publicados por Red Eléctrica a través de su API pública REData, sin impuestos. Solo son tu precio si tienes contratada la tarifa regulada PVPC; en el mercado libre depende de tu contrato.
 
 Luz Barata es una app independiente y no está vinculada a Red Eléctrica ni a ninguna comercializadora.
+
+FUENTES OFICIALES
+• Precio PVPC en e·sios (Red Eléctrica): https://www.esios.ree.es/es/pvpc
+• API REData de Red Eléctrica: https://www.ree.es/es/datos/apidatos

@@ -23,10 +23,12 @@ import androidx.compose.material3.RadioButton
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Switch
 import androidx.compose.material3.Text
+import androidx.compose.material3.TextButton
 import androidx.compose.material3.TopAppBar
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.LocalUriHandler
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.semantics.Role
 import androidx.compose.ui.unit.dp
@@ -126,6 +128,22 @@ fun SettingsScreen(
             HorizontalDivider(Modifier.padding(vertical = 16.dp))
             SectionTitle(stringResource(R.string.about_title))
             Text(stringResource(R.string.about_text), style = MaterialTheme.typography.bodyMedium)
+
+            // Google Play exige enlazar las fuentes oficiales de la información.
+            val uriHandler = LocalUriHandler.current
+            Text(
+                stringResource(R.string.source_title),
+                style = MaterialTheme.typography.labelLarge,
+                modifier = Modifier.padding(top = 12.dp),
+            )
+            OFFICIAL_SOURCES.forEach { (label, url) ->
+                TextButton(onClick = { uriHandler.openUri(url) }) { Text(stringResource(label)) }
+            }
+            Text(
+                stringResource(R.string.about_disclaimer),
+                style = MaterialTheme.typography.bodySmall,
+                color = MaterialTheme.colorScheme.onSurfaceVariant,
+            )
             Text(
                 stringResource(R.string.version, BuildConfig.VERSION_NAME),
                 style = MaterialTheme.typography.labelSmall,
@@ -135,6 +153,11 @@ fun SettingsScreen(
         }
     }
 }
+
+private val OFFICIAL_SOURCES = listOf(
+    R.string.source_1 to "https://www.esios.ree.es/es/pvpc",
+    R.string.source_2 to "https://www.ree.es/es/datos/apidatos",
+)
 
 @Composable
 private fun SectionTitle(text: String) {

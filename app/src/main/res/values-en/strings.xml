@@ -53,6 +53,10 @@
     <string name="privacy_options">Ad privacy options</string>
     <string name="about_title">About</string>
     <string name="about_text">Regulated tariff for small consumers (PVPC), published by Red Eléctrica. It is only your price if you are on the regulated PVPC tariff; on the free market it depends on your contract.</string>
+    <string name="source_title">Official sources</string>
+    <string name="source_1">PVPC price on e·sios (Red Eléctrica)</string>
+    <string name="source_2">Red Eléctrica REData API</string>
+    <string name="about_disclaimer">Luz Barata is an independent app and is not affiliated with Red Eléctrica, any government body or any electricity supplier.</string>
     <string name="version">Version %1$s</string>
     <string name="appliance_title">How much does it cost to run…?</string>
     <string name="appliance_locked">Work out what each appliance costs now and at the best time of the day.</string>

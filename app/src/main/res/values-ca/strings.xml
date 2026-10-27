@@ -53,6 +53,10 @@
     <string name="privacy_options">Opcions de privadesa dels anuncis</string>
     <string name="about_title">Quant a</string>
     <string name="about_text">Preu voluntari per al petit consumidor (PVPC), publicat per Red Eléctrica. Només és el teu preu si tens una tarifa regulada PVPC; al mercat lliure depèn del teu contracte.</string>
+    <string name="source_title">Fonts oficials</string>
+    <string name="source_1">Preu PVPC a e·sios (Red Eléctrica)</string>
+    <string name="source_2">API REData de Red Eléctrica</string>
+    <string name="about_disclaimer">Luz Barata és una app independent i no està vinculada a Red Eléctrica, a cap organisme públic ni a cap comercialitzadora.</string>
     <string name="version">Versió %1$s</string>
 
     <string name="appliance_title">Quant em costa posar…?</string>

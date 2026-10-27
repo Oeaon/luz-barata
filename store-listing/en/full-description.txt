@@ -20,3 +20,7 @@ DATA
 Prices are the PVPC (regulated tariff for small consumers) published by Red Eléctrica through its public REData API, excluding taxes. They are only your price if you are on the regulated PVPC tariff; on the free market it depends on your contract.
 
 Luz Barata is an independent app and is not affiliated with Red Eléctrica or any electricity supplier.
+
+OFFICIAL SOURCES
+• PVPC price on e·sios (Red Eléctrica): https://www.esios.ree.es/es/pvpc
+• Red Eléctrica REData API: https://www.ree.es/es/datos/apidatos

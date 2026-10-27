@@ -53,6 +53,10 @@
     <string name="privacy_options">Opciones de privacidad de anuncios</string>
     <string name="about_title">Acerca de</string>
     <string name="about_text">Precio voluntario para el pequeño consumidor (PVPC), publicado por Red Eléctrica. Solo es tu precio si tienes una tarifa regulada PVPC; en el mercado libre depende de tu contrato.</string>
+    <string name="source_title">Fuentes oficiales</string>
+    <string name="source_1">Precio PVPC en e·sios (Red Eléctrica)</string>
+    <string name="source_2">API REData de Red Eléctrica</string>
+    <string name="about_disclaimer">Luz Barata es una app independiente y no está vinculada a Red Eléctrica, a ningún organismo público ni a ninguna comercializadora.</string>
     <string name="version">Versión %1$s</string>
     <string name="appliance_title">¿Cuánto me cuesta poner…?</string>
     <string name="appliance_locked">Calcula lo que cuesta cada electrodoméstico ahora y en la mejor hora del día.</string>

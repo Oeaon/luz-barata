@@ -3,3 +3,7 @@
 -keep class * extends androidx.work.ListenableWorker {
     public <init>(android.content.Context, androidx.work.WorkerParameters);
 }
+
+# Room crea las bases de datos (como la de WorkManager, que trae AdMob) por reflexión
+# con el constructor vacío. R8 lo elimina y la app se cierra al abrirse.
+-keep class * extends androidx.room.RoomDatabase { <init>(); }
